@@ -1,0 +1,135 @@
+/* Your custom styles */
+header .navbar {
+	box-shadow: none;
+}
+header .navbar .nav-item .nav-link:hover  {
+	color: #FF8800!important;
+}
+header .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+    background-color: rgba(132,107,209,.1);
+    color: #ACACAC;
+}
+#banner {
+	position: relative;
+}
+#banner .banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#banner .banner-content .design {
+	position: relative;
+	margin-left: 35px;
+}
+#banner .banner-content .design::before, #banner .banner-content .design::after {
+	position: absolute;
+	content: "\a0";
+	width: 30px;
+	height: 2px;
+	overflow: hidden;
+	top: 50%;
+	background-color: #fff;
+}
+#banner .banner-content .design::before {
+	margin-left: -30px;
+}
+#banner .banner-content h1 {
+	font-size: 6.3rem;
+	margin-left: -35px;
+	position: relative;
+	border-bottom: 2px solid #fff;
+}
+#banner .banner-content h1::before {
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 2px solid #FFC107;
+	left: 48%;
+	top: 90%;
+	transform: rotate(45deg);
+}
+#banner .banner-content h1::after {
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 2px solid #FFC107;
+	left: 52%;
+	top: 90%;
+	transform: rotate(45deg);
+}
+#banner .banner-content .warn {
+	position: relative;
+	border-top: 2px solid #fff;
+	margin-left: -35px;
+	padding-left: 25px;
+}
+@media (max-width: 767px) {
+	.banner-content {
+		display: none;
+	}
+}
+#about .progress {
+	height: 20px!important;
+	border-radius: 20px;
+}
+#about .progress .progress-bar {
+	height: 20px!important;
+	border-radius: 20px;
+}
+#pricing .card {
+	border-radius: 20px!important;
+}
+.pricing-card .price .version {
+	border-radius: 20px 20px 0 0;
+}
+#pricing .pricing-card .header {
+	border-radius: 20px 20px 0 0;
+}
+#pricing .pricing-content .card .card-body .btn {
+	border-radius: 0, 0, 15px, 15px!important;
+	padding: 1.3rem 4rem!important;
+	color: #000!important;
+	box-shadow: none;
+}
+#count .counter-content {
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);	
+background-color: red;
+border: 5px solid #fff;
+}
+#count .counter {
+	background-color: blue;
+	padding: 1px 20px;
+	margin-left: -50px;
+	margin-top: -10px;
+	border-radius: 2rem;
+	box-shadow: none;
+}
+#count .counter-content p span {
+	font-size: 2rem;
+}
+#count .counter-content .count-text{
+	font-size: 1.6rem;
+	margin-top: 2.5rem;
+}
+#contact {
+	background-color: #3F51B5;
+}
+#contact .contact-info [type=email],
+#contact .contact-info [type=password] {
+	border: 1px solid #fff;
+	padding: 0px 10px;
+	border-radius: 5px;
+}
+#contact .contact-info textarea {
+	border-radius: 5px;
+}
+#contact .contact-info .btn {
+	border-radius: 10px;
+}
+footer .foot-top {
+	border-top: 5px solid #6341C2;
+}
